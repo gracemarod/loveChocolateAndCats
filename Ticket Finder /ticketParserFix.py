@@ -12,8 +12,6 @@
 import sys
 import collections 
 
-#d = collections.OrderedDict()
-
 # main function
 def main():
 
@@ -102,7 +100,7 @@ def correctArguments(STATE,STATETYPE,HOST):
 def readArg(STATE,STATETYPE,HOST, d):
 	check = False
 	if(STATE in ("OK")):
-	 	if HOST in d: #whichHost:
+	 	if HOST in d: 
 	 		print HOST + " and " + d[HOST] + " have been recovered. " + "\n"
 	 		del d[HOST]
 	 		newFile = open("hostsTickets.txt", "w")
@@ -118,7 +116,6 @@ def readArg(STATE,STATETYPE,HOST, d):
 			if HOST in d: 
 				print HOST +" already has a ticket open: " +d[HOST] + "\n"
 				check = True
-				#break
 
 			if not check: 
 				tickValue = d.values()[-1]
@@ -137,7 +134,6 @@ def readArg(STATE,STATETYPE,HOST, d):
 	else: #unknown
 		if HOST in d: 
 			print HOST +" already has a ticket open: " +d[HOST] + "\n"
-			#break
 	return check
 
 # /****************************************************************
