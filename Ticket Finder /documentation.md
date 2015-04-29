@@ -11,6 +11,9 @@ If the state is OK, readArg() will check if the host is a key in the dictionary.
 
 Reference:
 Starting out with Python 2nd Edition by Tony Gaddis
+
 [http://www.tutorialspoint.com/python](http://www.tutorialspoint.com/python)
+
 [https://docs.python.org](https://docs.python.org)
+
 [http://www.tutorialspoint.com/python](http://www.tutorialspoint.com/python)
