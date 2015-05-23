@@ -10,7 +10,9 @@ The function readFile() opens the file hostsTickets.txt and saves the data in th
 If the state is OK, readArg() will check if the host is a key in the dictionary. If it is, it will delete it. The file will be opened again and the remaining keys and values will be written in the file. When the state is WARNING and the statetype HARD, readArg() will look again if the host is in d. If it is, it will display it and break from the loop. If it found that the host it’s not in d, it will open the file again and append the host. The last ticket is search in the dictionary to split it and convert its numbers to an int. That way it can be incremented so it creates a new ticket for the new host.
 
 Reference:
+
 Starting out with Python 2nd Edition by Tony Gaddis
+
 [http://www.tutorialspoint.com/python](http://www.tutorialspoint.com/python)
 
 [https://docs.python.org](https://docs.python.org)
